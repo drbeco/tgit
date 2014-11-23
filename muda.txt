@@ -1,2 +1,1 @@
-diff-local-remote
-diff-index-remote
+l1 = remote
