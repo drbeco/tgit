@@ -1,3 +1,5 @@
 1- area
 2- staged
+3- Local repository
+4- remote
 
