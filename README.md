@@ -1,4 +1,8 @@
-tgit
+/*! \mainpage Some title here
+ content here
+*/
+
+tgit 
 ====
 
 teste dos ramos
