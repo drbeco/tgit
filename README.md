@@ -1,13 +1,11 @@
-Introduction: a simple Prolog module to be called by a C program.
-=================================================================
+#Prolog calls C
+##A simple Prolog module to be called by a C program.
 
-Summary
--------
+###Summary
 
 This example shows a factorial function written in prolog that can be called by a C program.
 
-Description
------------
+###Description
 
 Sometimes a task is too much high level to be implemented in pure C (although its always possible, as C is such a universal language). In that case you might want to call a library written in another language.
 
@@ -17,18 +15,23 @@ Now, how to do that? Easy. Just take a look at this example. It has all you need
 
 Use it as a skeleton for your work.
 
-__In appreciation,__
+__In appreciation__
 
 __Dr. Beco__
 _________________________________________________________________
 
+###Program details
+
 * version 20150622.232442
 * date 2015-06-22
-* author Ruben Carlo Benante <<rcb at beco.cc>> (beco)
-* Webpage <<www.beco.cc>>
+* author Ruben Carlo Benante <<rcb@beco.cc>> (beco)
+* Webpage [www.beco.cc]<www.beco.cc>
+
 _________________________________________________________________
 
-copyright (c) 2015 GNU GPL v3
+###Copyright, License and Warranty
+
+__copyright (c) 2015 GNU GPL v3__
 
 This program is free software: you can redistribute it
 and/or modify it under the terms of the 
