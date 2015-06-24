@@ -25,7 +25,7 @@ _________________________________________________________________
 * version 20150622.232442
 * date 2015-06-22
 * author Ruben Carlo Benante <<rcb@beco.cc>> (beco)
-* Webpage [www.beco.cc]<www.beco.cc>
+* Webpage <<a href="<+$WEBPAGE$+>"><+$WEBPAGE$+></a>>
 
 _________________________________________________________________
 
