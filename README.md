@@ -24,8 +24,14 @@ _________________________________________________________________
 
 * version 20150622.232442
 * date 2015-06-22
-* author Ruben Carlo Benante <<rcb@beco.cc>> (beco)
+* Vai <<mailto:rcb@beo.cc>>
+* Vai <<rcb@beo.cc>>
+* author Cante <[rbee@beceo.cc](ceb@beeceo.bc)> (Dr. Beco)
+* author e <<acb@beco.cc>> (Dr. Beco)
 * Webpage <<a href="www.beco.cc">www.beco.cc</a>>
+* Webpage <<a href="http://www.beco.ch">http://www.beco.ch</a>>
+* Web 3 <[www.beco.cc](www.beco.cc)>
+* Web 4 <[http://www.beco.cc](http://www.beco.cc)>
 
 _________________________________________________________________
 
