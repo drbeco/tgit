@@ -1,6 +1,6 @@
 # Header level 1
-## <+#TITLE#+>
-### <+#SUBTITLE#+>
+## Title here
+### Subtitle here
 
 #### Summary
 
@@ -14,6 +14,8 @@ The markdown bellow are compatible with _doxygen_ and _github_.
 
 If you are planning to integrate those two, better not use header level 1, because doxygen already have a big title and they are going to be duplicated.
 
+__DELETE THE HEADER 1__ unless you like it.
+
 ##### Paragraph
 
 Just jump a blank line.
@@ -26,7 +28,7 @@ Use as many # as you like from 1 to 6
 
 ###### This is a header level 6
 
-Level 6 fonts looks smaller than normal text in doxygen!
+Level 6 fonts looks smaller than normal text in doxygen, and the same size but gray in doxygen.
 
 Thats the last level.
 
@@ -70,7 +72,9 @@ You should prefer using _underlines_ because, you know, __doxygen__ don't like t
 
 This is trick! Both _doxygen_ and _github_ have source code definitions, but they don't agree how to mark. So you probably need to choose.
 
-__Doxygen__ code block
+Well, choose __doxygen__ because __github__ can understand most of it! (Yep! Han!)
+
+Code block:
 
     if (chose(you)) doxygen
        then "start your code indented" by 4 spaces.
@@ -82,7 +86,7 @@ __Doxygen__ code block
     endif
 
 
-__Doxygen__ fancy (fenced) code block
+Fancy (fenced) code block
 
 You can syntax highlight a source code using 3 tildes. Just state the language extension (if supported):
 
@@ -106,72 +110,37 @@ C:
   return 1;
 ~~~
 
-Not mentioned:
+Not mentioned what language:
 
 ~~~
 if(x==y)
   sprintf(str, "%d is %d\n", x, y);
 ~~~
 
-If you are using doxygen, you probably want that.
-
-__Github__ fancy code
-
-Not mentioned
-
-```
-
-If(this) is code;
-   then this is "all" colored;
-   nice and easy
-   
-```
-
-Also, __Github__ has syntax highligthing. Just use the name of the language you want to highligth after the first set of 3 backticks.
-
-This is Ruby:
-
-```ruby
-require 'red carpet'
-```
-
-Prolog:
-
-```prolog
-head(X) -:
-    body(X),
-    not(foot(X)).
-```
-
-And C:
-
-```c
-#ifdef LESS
-  if(x<Y)
-#else
-  if(x>=y)
-#endif
-  printf("%d\n", x);
-  return 1;
-```
-
-At least both agree `one back tick` is for `inline code`.
+At least both agree `one back tick` is for `inline code` (or `monospaced font`).
 
 ##### Links
 
 You can link using brackets for the text and parenthesis for the link:
 
-(Github Markdown)[https://help.github.com/articles/markdown-basics/]
-(Doxygen Markdown)[http://www.stack.nl/~dimitri/doxygen/manual/markdown.html]
+[Github Markdown](https://help.github.com/articles/markdown-basics/)
+
+[Doxygen Markdown](http://www.stack.nl/~dimitri/doxygen/manual/markdown.html)
 
 For email, it works if you wrap in < and >: <test@example.com>
+
+You can also put an email in a link:
+
+[test email](test@example.com)
 
 If you like when they have the < and > around, you need to use 2.
 <<test@example.com>>
 
-And you can use it also in the URL link just like this:
+or
 
-<(text)[www.example.com]>
+<[test email](test@example.com)>
+
+And you can use it also in the URL link just like this: <[text](www.example.com)>
 
 ##### Horizontal rules
 
@@ -206,14 +175,14 @@ Use it as a skeleton for your work.
 
 __In appreciation__
 
-__Dr. Beco__
+__Ruben Carlo Benante__
 _________________________________________________________________
 
 ####Program details
 
-* version 20150622.232442
-* date 2015-06-22
-* author Ruben Carlo Benante <<rcb@beco.cc>> (Dr. Beco)
+* Version 20150623.232512
+* Date 2015-06-23
+* Author Ruben Carlo Benante <<rcb@beco.cc>> (beco)
 * Webpage <[www.beco.cc](www.beco.cc)>
 
 _________________________________________________________________
