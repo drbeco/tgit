@@ -4,7 +4,9 @@ int main(void)
 {
     int x;
 
-    x=0;
+    x=1;
+    printf("%d\n", &x);
+    
     return x;
 }
 
