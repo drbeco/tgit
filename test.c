@@ -2,6 +2,9 @@
 
 int main(void)
 {
-    return 0;
+    int x;
+
+    x=0;
+    return x;
 }
 
