@@ -2,4 +2,5 @@
 2- staged
 3- Local repository
 4- remote
-
+-------
+5- testando workshop git
