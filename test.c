@@ -9,6 +9,9 @@ int main(void)
     scanf("%d", &x);
 
     printf("%d\n", &x);
+
+    if(x==1)
+        printf("um\n");
     
     return x;
 }
