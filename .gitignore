@@ -1,3 +1,9 @@
+# Ignorar pasta teste
+test*
+masteronly*
+nono*
+tr*
+
 # Object files
 *.o
 *.ko
