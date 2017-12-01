@@ -20,6 +20,13 @@ __In appreciation__
 __Dr. Beco__
 _________________________________________________________________
 
+#### Testing embedded images
+
+![Project Euler](https://raw.githubusercontent.com/username/projectname/branch/path/to/img.png)
+
+![Don't share solutions](https://imgur.com/ChH3As2)
+
+
 ####Program details
 
 * version 20150622.232442
