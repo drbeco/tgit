@@ -22,10 +22,10 @@ _________________________________________________________________
 
 #### Testing embedded images
 
-![Project Euler](https://raw.githubusercontent.com/username/projectname/branch/path/to/img.png)
+`![Project Euler](https://raw.githubusercontent.com/username/projectname/branch/path/to/img.png)`
 
-![Don't share solutions](https://imgur.com/ChH3As2)
 
+![Don't share solutions](https://i.imgur.com/ChH3As2.png)
 
 ####Program details
 
