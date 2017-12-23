@@ -1,0 +1,10 @@
+language: c
+
+#install: sudo apt-get install clang gcc
+
+compiler:
+  - clang
+  - gcc
+
+script: make test.x
+
