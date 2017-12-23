@@ -6,5 +6,5 @@ compiler:
   - clang
   - gcc
 
-script: make test.x
+script: make travis SRC=test.c
 

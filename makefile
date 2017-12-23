@@ -48,6 +48,8 @@
 #    	 $ make ex1.x SRC="mysrc1.c mysrc2.c"
 #	 - Normal C program (ex2.c) version 2.3, no debug
 #	 	 $ make ex2.x MAJOR=2 MINOR=3 DEBUG=0
+#    - Travis Continuous Integration Test (C program):
+#    	$ make travis SRC=ex2.c
 #	 - Brainforce:
 #	     $ make ex1.bf.x
 #	 - Portugol:
@@ -178,6 +180,31 @@ endif
 LDLIBS = -Wl,--defsym,BUILD_$(DEFSYM)=0 -lm -lpthread -lncurses -lcurl -lgmp
 # making a shared library
 CCSHARED = -shared -fPIC
+
+# travis for C
+# travis c: flags for the c compiler
+TCFLAGS = -Wall -Wextra -std=gnu99
+ifeq "$(DEBUG)" "0"
+# not a debug, go fast
+TCFLAGS += -Ofast
+else ifeq "$(DEBUG)" "1"
+# it is a debug, add symbols and no optimizations
+TCFLAGS += -g -O0
+else
+# exaustive debug
+TCFLAGS += -g -O0 -pg -fprofile-arcs -ansi -Wpedantic
+endif
+# travis for c: pre-processor flags
+TCPPFLAGS = -DVERSION=$(VERSION) -DBUILD="\"$(BUILD)\"" -DDEBUG=$(DEBUG) -D$(D) -D_FORTIFY_SOURCE=$(FORTIFY)
+ifeq "$(DEBUG)" "2"
+# POSIX extra stuff
+TCPPFLAGS += -D_XOPEN_SOURCE=700
+endif
+# travis for c: libraries to link, options to the linker
+TLDLIBS = -Wl,--defsym,BUILD_$(DEFSYM)=0 -lm -lpthread -lncurses -lcurl -lgmp
+# travis for c: making a shared library
+TCCSHARED = -shared -fPIC
+
 # brainforce options
 BFFLAGS = -i on -p both -r on -w on
 # making a prolog shared library
@@ -223,6 +250,12 @@ ifeq "$(CCCOLOR)" "always"
 	@sed -i -r "s/\x1B\[(([0-9]+)(;[0-9]+)*)?[m,K,H,f,J]//g" errors.err
 endif
 	-@[ ! -s errors.err ] && echo $@ version $(VERSION) > VERSION
+
+# Travis for c: Programa em C (incluindo bibliotecas como allegro ou libaspipo).
+# Travis for c: Inclui VERSION, data de BUILD e DEBUG (opcional).
+travis : $(OBJ) $(SRC)
+	-$(CC) $(TCFLAGS) $(TCPPFLAGS) $(TLDLIBS) $^ -o $@
+	-@if git diff --exit-code HEAD^ HEAD -- VERSION 2>&1 >/dev/null; then echo "No version changes"; false; fi
 
 # override built-in rules for mathing everything (exactly the same rule as %.x above)
 % : %.c $(OBJ) $(SRC)
