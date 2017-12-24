@@ -146,7 +146,7 @@ DEFSYM = $(subst .,_,$(BUILD))
 # automatic version number
 VERSION = "\"$(MAJOR).$(MINOR).$(BUILD)\""
 # c compiler
-CC ?= gcc
+CC = gcc
 # brainforce compiler
 BF = bf
 # gportugol compiler
