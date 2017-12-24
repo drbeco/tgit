@@ -10,3 +10,7 @@ compiler:
 
 script: make -e travis SRC=test.c
 
+notifications:
+      irc: "chat.freenode.net#contauto"
+
+
