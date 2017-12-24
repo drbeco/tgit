@@ -8,7 +8,7 @@ int main(void)
     printf("Quanto?");
     scanf("%d", &x);
 
-    printf("%lu\n", x);
+    printf("%d\n", x);
 
     if(x==1)
         printf("um\n");
