@@ -8,5 +8,5 @@ compiler:
   - clang
   - gcc
 
-script: make travis SRC=test.c
+script: make -e travis SRC=test.c
 

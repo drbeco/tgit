@@ -183,7 +183,7 @@ CCSHARED = -shared -fPIC
 
 # travis for C
 # travis c: flags for the c compiler
-TCFLAGS = -Wall -Wextra -std=gnu99
+TCFLAGS = -Wall -Wextra -std=gnu99 -Werror
 ifeq "$(DEBUG)" "0"
 # not a debug, go fast
 TCFLAGS += -Ofast
