@@ -146,7 +146,7 @@ DEFSYM = $(subst .,_,$(BUILD))
 # automatic version number
 VERSION = "\"$(MAJOR).$(MINOR).$(BUILD)\""
 # c compiler
-CC = gcc
+CC ?= gcc
 # brainforce compiler
 BF = bf
 # gportugol compiler
@@ -255,7 +255,7 @@ endif
 # Travis for c: Inclui VERSION, data de BUILD e DEBUG (opcional).
 travis : $(OBJ) $(SRC)
 	-$(CC) $(TCFLAGS) $(TCPPFLAGS) $(TLDLIBS) $^ -o $@
-	-@if git diff --exit-code HEAD^ HEAD -- VERSION 2>&1 >/dev/null; then echo "No version changes"; false; fi
+	-@if git diff --exit-code HEAD^ HEAD -- VERSION 2>&1 >/dev/null; then $(error "Error: No VERSION changes"); fi
 
 # override built-in rules for mathing everything (exactly the same rule as %.x above)
 % : %.c $(OBJ) $(SRC)

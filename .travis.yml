@@ -1,6 +1,6 @@
 language: c
 
-fail_fast: true
+#fail_fast: true
 
 #install: sudo apt-get install clang gcc
 
