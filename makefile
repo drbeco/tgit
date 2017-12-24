@@ -255,7 +255,7 @@ endif
 # Travis for c: Inclui VERSION, data de BUILD e DEBUG (opcional).
 travis : $(OBJ) $(SRC)
 	$(CC) $(TCFLAGS) $(TCPPFLAGS) $(TLDLIBS) $^ -o $@
-	#@if git diff --cached --exit-code -- VERSION 2>&1 >/dev/null; then $(error "Error: No VERSION changes"); fi
+	#@if git diff --cached --exit-code -- VERSION 2>&1 >/dev/null ; then $(error "Error: No VERSION changes") ; fi
 
 # override built-in rules for mathing everything (exactly the same rule as %.x above)
 % : %.c $(OBJ) $(SRC)
