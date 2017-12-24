@@ -6,7 +6,7 @@ int main(void)
     int x;
 
     printf("Quanto?");
-    scanf("%d", &x);
+    scanf("%f", &x);
 
     printf("%d\n", x);
 
