@@ -5,7 +5,7 @@
 
 This example shows a factorial function written in prolog that can be called by a C program.
 
-Testing gpg...
+Testing gpg....
 
 ####Description
 
