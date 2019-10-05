@@ -1,2 +1,20 @@
+mudando... coruja
+assinado
+
 l1 = remote
 l2 = linha 2
+
+assina
+assina 2
+assina 3 ok
+assina 4 
+
+muda
+muda
+.a.a.a
+bla bla
+bla bla
+.a.a.a
+.a.a.a
+oi
+oi

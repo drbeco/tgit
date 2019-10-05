@@ -5,6 +5,8 @@
 
 This example shows a factorial function written in prolog that can be called by a C program.
 
+Testing gpg....
+
 ####Description
 
 Sometimes a task is too much high level to be implemented in pure C (although its always possible, as C is such a universal language). In that case you might want to call a library written in another language.
@@ -19,6 +21,13 @@ __In appreciation__
 
 __Dr. Beco__
 _________________________________________________________________
+
+#### Testing embedded images
+
+`![Project Euler](https://raw.githubusercontent.com/username/projectname/branch/path/to/img.png)`
+
+
+![Don't share solutions](https://i.imgur.com/ChH3As2.png)
 
 ####Program details
 
