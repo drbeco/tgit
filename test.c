@@ -1,12 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main(vid)
+int main(void)
 {
     int x;
 
     printf("Quanto?");
-    scanf("%.2f", &x);
+    scanf("%f", &x);
 
     printf("%d\n", x);
 
