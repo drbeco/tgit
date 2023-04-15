@@ -1,5 +1,4 @@
-esta eh errada
-esta linha eh certa 
+esta linha eh errada 
 inserindo linha 1
 mudando... coruja
 assinado
