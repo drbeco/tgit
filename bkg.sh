@@ -1,4 +1,4 @@
-#no
+#yes
 while true
 do
     echo vai
