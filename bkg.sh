@@ -1,4 +1,3 @@
-#maybe
 while true
 do
     echo vai
