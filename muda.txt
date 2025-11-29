@@ -1,19 +1,2 @@
 esta linha eh errada 
-inserindo linha 1
-mudando... coruja
-assinado
-
-l1 = remote
-l2 = master
-
-assina
-
-muda
-.a.a.a
-bla bla
-.a.a.a
-oi6
-
-oi
-oi 2
-mudando master
+esta linha esta certa
